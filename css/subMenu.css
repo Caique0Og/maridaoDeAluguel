@@ -1,0 +1,208 @@
+/* =========================================================== INSTALAÇÃO */
+
+.subMenu-instalação{
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #055243,
+        #143f78,
+        #060a35
+    );    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -65%;
+    top: 110%;
+    height: 0;
+    width: 200px;
+    font-size: 1vw;
+    border-radius: 13px;
+    text-align: center;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    box-shadow: 
+    0px 0px 7px rgba(0, 0, 0, 0.735),
+    inset .1em .1em 1em black,
+    inset -.6em -.1em 1em rgb(27, 90, 161);
+    opacity: 95%;
+    z-index: 1;
+}
+.li-instalacao:hover .subMenu-instalação{
+    height: 15vw;
+}
+.li-instalacao{
+    position: relative;
+}
+
+.subMenu-instalação a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 33px;
+}
+
+.subMenu-instalação a:hover{
+    color: lightgreen;
+    font-size: 1.1vw;
+    transition: .3s;
+
+}
+
+/* ============================================================ REPAROS */
+.menu{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px;
+    color: #0aaea8d9;
+    font-weight: 600;
+    letter-spacing: 0,5px;
+}
+.subMenu-reparos{
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #055243,
+        #143f78,
+        #060a35
+    );    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -16%;
+    top: 110%;
+    height: 0;
+    width: 200px;
+    overflow: hidden;
+    font-size: 1vw;
+    border-radius: 13px;
+    text-align: center;
+    transition: .5s;
+    box-shadow: 
+    0px 0px 7px rgba(0, 0, 0, 0.735),
+    inset .1em .1em 1em black,
+    inset -.6em -.1em 1em rgb(27, 90, 161);
+    opacity: 95%;
+
+}
+.li-reparos{
+    position: relative;
+}
+.li-reparos:hover .subMenu-reparos{
+    height: 20vw;
+}
+.subMenu-reparos a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-top: 23px;
+}
+.subMenu-reparos a:hover{
+    color: lightgreen;
+    font-size: 1.1vw;
+    transition: .3s;
+}
+
+
+
+/* ============================================================ GERAIS */
+
+.subMenu-gerais{
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #055243,
+        #143f78,
+        #060a35
+    );    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -33.1%;
+    top: 110%;
+    height: 0;
+    width: 200px;
+    overflow: hidden;
+    font-size: 1vw;
+    border-radius: 13px;
+    text-align: center;
+    transition: .5s;
+    box-shadow: 
+    0px 0px 7px rgba(0, 0, 0, 0.735),
+    inset .1em .1em 1em black,
+    inset -.6em -.1em 1em rgb(27, 90, 161);
+    opacity: 95%;
+
+}
+.li-gerais{
+    position: relative;
+}
+.li-gerais:hover .subMenu-gerais{
+    height: 20vw;
+}
+.subMenu-gerais a{
+    text-decoration: none;
+    height: 100%;
+    color: aliceblue;
+    margin-top: 23px;
+}
+.subMenu-gerais a:hover{
+    color: lightgreen;
+    font-size: 1.1vw;
+    transition: .3s;
+}
+
+@media screen and (max-width: 480px){
+    .subMenu-instalação{
+        position: absolute;
+        right: 100%;
+        font-size: 2vw;
+        z-index: 1;
+    }
+    .li-instalacao:hover .subMenu-instalação{
+        height: 55vw;
+        font-size: 3.9vw;
+        background-color: #060a35;
+        opacity: 100%;
+        text-wrap: wrap;
+    }
+
+    .li-reparos:hover .subMenu-reparos{
+        height: 85vw;
+        font-size: 3.9vw;
+        background-color: #060a35;
+        opacity: 100%;
+        text-wrap: wrap;        
+    }
+    .subMenu-reparos{
+        position: absolute;
+        right: 100%;
+        font-size: 2vw;
+        z-index: 1;
+    }
+    .li-gerais:hover .subMenu-gerais{
+        height: 100vw;
+        font-size: 3.9vw;
+        background-color: #060a35;
+        opacity: 100%;
+        text-wrap: wrap;        
+    }
+    .subMenu-gerais{
+        position: absolute;
+        top: -250%;
+        right: 130%;
+        font-size: 2vw;
+        z-index: 1;
+    }
+    .menu p{
+        opacity: 0;
+    }
+    
+    .subMenu-instalação a:hover{
+        font-size: 4vw;
+    }
+    .subMenu-reparos a:hover{
+        font-size: 4vw;
+
+    }
+
+}

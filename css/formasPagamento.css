@@ -1,0 +1,72 @@
+
+.formas-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-formas{
+    display: flex;
+    margin-top: 13px;
+    height: 4vw;
+    width: 30vw;
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #0eb329d1,
+        #0a61307e
+    );
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.607);
+}
+.title-formas h3{
+    margin: auto;
+    color: antiquewhite;
+}
+.pagamento-content{
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    height: 25vw;
+    justify-content: space-around;
+    border-radius: 10%;
+    box-shadow: 
+    inset .1em .1em .2em rgba(15, 3, 65, 0.203),
+    inset -.1em -.1em .2em rgba(15, 3, 65, 0.288);
+
+}
+.pagamento-content img{
+    height: 3vw;
+}
+.pagamento-content p{
+    text-align: center;
+    margin-left: 13px;
+    align-items: center;
+  
+}
+@media screen and (max-width: 480px){
+    .formas-pagamento{
+        width: 89%;
+        height: 100vw;
+        margin: auto;
+        text-wrap: wrap;
+        font-size: 1vw;
+    }
+    .title-formas{
+        height: 15vw;
+        width: 100%;
+        font-size: 5vw;
+    }
+    .pagamento-content{
+        height: 150vw;
+        font-size: 4vw;
+    }
+    .pagamento-content img{
+        height: 10vw;
+    }
+    .pagamento-content p{
+        text-align: center;
+        margin-left: 13px;
+        align-items: center;
+      
+    }
+}

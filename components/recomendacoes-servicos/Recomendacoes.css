@@ -1,0 +1,63 @@
+#avaliacoes-container {
+    width: 89%;
+    height: 27vw;
+    margin: 20px auto;
+    padding: 3px;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #0e156f,
+        #0e156f,
+        #333b99a4
+    );  
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    overflow-x: auto;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+#lista-avaliacoes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+
+.avaliacao {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #09e9bc,
+        #096ae9,
+        #0eee68a5,
+        #0e156f
+    ); 
+    height: 21vw;
+    margin: 13px;
+    width: 177px;
+    border-radius: 13px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 12px rgba(21, 192, 186, 0.806),
+    inset .3em .3em 1em rgba(0, 0, 0, 0.584),
+    inset -.3em -.3em 1em rgba(7, 7, 7, 0.733);
+}
+.avaliacao:hover{
+    height: 21.5vw;
+    width: 177.5px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.avaliacao h3{
+    color: #062650a7;
+    letter-spacing: 1px;
+}
+.estrelas {
+    color: gold;
+}

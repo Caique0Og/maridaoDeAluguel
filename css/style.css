@@ -1,0 +1,245 @@
+/* ============================================================================= GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-wrap: wrap;
+}
+
+h2{
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #1c2496,
+        #1c2496,
+        lightgreen
+    );
+    margin: 13px auto;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+/* ============================================================================= HEADER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-image: -webkit-linear-gradient(
+        144deg,
+        lightgreen,
+        #020a7d,
+        #101983b4
+    );
+    height: 8vw;
+    max-width: 100%;
+    align-items: center;
+    background-size: 200%;
+}
+@keyframes border {
+    0%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 500%;
+    }
+}
+.mobileBtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu p{
+    margin: 13px;
+}
+.mobileBtn:hover{
+    background-color: #020a7d59;
+    width: 4.9vw;
+    height: 4.9vw;
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ;
+}
+.header-content{
+    display: flex;
+    background-image: -webkit-linear-gradient(
+        233deg,
+        #0e156f,
+        #0e156f,
+        #333b99a4
+    );
+    height: 7.5vw;
+    width: 99.7%;
+    align-items: center;
+    transition: .5s;
+    border-radius: 33px;
+}
+/* ============================================================================= USER */
+
+.user-image{
+    height: 7vw;
+    width: 7vw;
+    background-image: -webkit-linear-gradient(
+        233deg,
+        lightgreen,
+        #1c2496,
+        #333b99a4
+    );    
+    clip-path: circle();
+    background-size: 100%;
+    animation: border 3s infinite forwards alternate ease-in-out ;
+    box-shadow: 0px 0px 1px #e5ebe3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-image img{
+    height:93% ;
+    width: 93%;
+    clip-path: circle();
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+}
+.user-ola{
+    margin: 13px;
+    width: 12%;
+    text-align: center;
+    border-right: #1c2496 solid 3px;
+    padding: 13px;
+    border-radius: 10%;
+}
+.user-ola p{
+    color: aliceblue;
+}
+
+/* ============================================================================= USER */
+
+/* ============================================================================= LI SERVIÇOS */
+
+.serviços{
+    width: 72vw;
+    display: flex;
+    justify-content: space-around;
+}
+.serviços li{
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.2vw;
+}
+.serviços li:hover{
+    color: lightgreen;
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: #09e9bc solid 1px;
+    font-size: 1.22vw;
+
+}
+@media screen and (min-width: 374px) and (max-width: 900px){
+    header{
+        height: 32vw;
+        width: 100%;
+        position: relative;
+        background-image: -webkit-linear-gradient(
+            233deg,
+            #0e146fd3,
+            #050a4ce6,
+            #141b6ce1
+        );   
+        background-size: cover;  
+        animation: none;
+        display: flex;
+
+    }
+    .mobileBtn{
+        opacity: 1;
+        width: 25vw;
+        position: absolute;
+        right: -1%;
+        background: transparent;
+        border: none;
+    }
+    .mobileBtn:hover{
+        opacity: 1;
+        width: 25vw;
+        position: absolute;
+        right: -1%;
+        background: transparent;
+        border: none;
+        clip-path: none;
+    }
+ 
+    .header-content{
+        background-color: #096ae9;
+        height: 82vh;
+        width: 50vw;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        border-radius: 3px;
+        z-index: 1;
+    }
+    .header-content li{
+        background-color: #020a7d;
+        padding: 13px;
+    }
+
+    .user-image img{
+        height: 28vw;
+        width: 28vw;
+        
+    }
+    .user-image{
+        position: absolute;
+        left: -33%;
+        top: 3%;
+        height: 30vw;
+        width: 100vw ;
+    }
+    .user-ola{
+        position: absolute;
+        right: 22%;
+        top: -7.9%;
+        height: 30vw;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 33%;
+    }
+
+    .serviços{
+        flex-direction: column;
+        height: 50vh;
+        width: 30vw;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .serviços li{
+        font-size: 5vw;
+        border-bottom: #096ae9 solid 1px;
+        padding: 3px;
+        border-radius: 10%;
+        justify-content: center;
+    }
+    .serviços li:hover{
+        font-size: 5.5vw;
+    }
+    #avaliacoes-container{
+        height: 100vw;
+    }
+    .avaliacao{
+        height: 87vw;
+        width: 50vw;
+        font-size: 5vw;
+    }
+}
