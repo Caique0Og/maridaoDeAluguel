@@ -24,7 +24,7 @@ async function loginPrestador() {
 
       
       setTimeout(() => {
-        window.location.href = 'http://127.0.0.1:5501/prestador/painel.html'; //colocar aqui a URL do dasshborar do prestador 
+        window.location.href = 'http://127.0.0.1:5501/../../prestador/perfil.html'; //colocar aqui a URL do dasshborar do prestador 
       }, 1000);
 
     } else {
